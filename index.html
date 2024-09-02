@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Then Crocodile Game</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <div class="header"> 
+        <div>THE CROCODILE GAME</div> 
+        <img src="croco.png"/>
+    </div>
+
+    <div class="box">
+        <div class="text"> <b>Which number is bigger? <br> Use > or < </b> </div>
+        <div class="numAndInput"> 
+            <div id="firstNumber"> 0 </div>
+            <input id="input">
+            <div id="secondNumber"> 0 </div>
+        </div>
+        <div class="buttonsDiv">
+            <button onclick="getNewNumber()"> Get New Numbers </button>
+            <button onclick="checkAnswer()"> Check Your Answer </button>
+        </div>
+    </div>
+
+    <div class="scoreBox">
+        <div> Your score is: </div>
+        <div id="score" style="font-size: 35px;"> 0 </div>
+    </div>
+
+    <div class="joke">
+        <div>What do you get if you cross a crocodile and a computer?</div>
+        <div>A lot of bytes!</div>
+    </div>
+
+    <script src ="script.js"></script>
+      
+</body>
+</html>

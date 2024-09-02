@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;    
+    font-family: monospace;   
+    background-color: #f8edd9;
+    color: #327039;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+img {
+    width: 250px;
+    margin: 20px;
+}
+
+.header {
+    text-align: center;
+    width: 400px;
+    height: 170px;
+    margin-top: 50px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #66722e;
+    color: #48854f;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #48854f;
+    border: 2px solid  #8eac23;
+    color:#f8edd9;
+    width: 400px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px #133020;
+}
+
+.numAndInput {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttonsDiv{
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    font-family: monospace;
+    font-size: 14px;
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+    background-color: #f8edd9;
+    color: #327039;
+    border: 1px solid #8eac23;
+}
+
+button:hover{
+    background-color: #f0be49;
+    color: #133020;
+    box-shadow: 1px 1px 1px #133020;
+}
+
+input {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #8eac23;;
+    background-color: #f8edd9;
+}
+
+.scoreBox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #48854f;
+    border: 2px solid  #8eac23;
+    color:#f8edd9;
+    width: 400px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #133020;
+}
+
+.joke{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 10px;
+    width: 400px;
+}
