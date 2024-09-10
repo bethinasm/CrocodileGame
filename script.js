@@ -68,17 +68,17 @@ function getNewNumber(){
     
 function checkAnswer(){
     //document.getElementById('input').value; (skal ikke brukes i MVC) // value brukes fordi det ikke er slutt tag på input
-    let correctOperator = '';
+    let currectOperator = '';
 
     if (number1 > number2){ // sjekker om operator i input div er riktig
-        correctOperator = '>';      
+        currectOperator = '>';      
     } else if (number1 < number2){
-        correctOperator = '<';
+        currectOperator = '<';
     } else {
-        correctOperator = '='; //hvis begge tallene er like
+        currectOperator = '='; //hvis begge tallene er like
     }
 
-    if (userInput == correctOperator){ // sjekker om input svar er riktig og legger til eller trekker fra på score
+    if (userInput == currectOperator){ // sjekker om input svar er riktig og legger til eller trekker fra på score
         score++;
         alert('That is correct! You get a point!');
     } else {
