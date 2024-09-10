@@ -55,30 +55,29 @@ function getNewNumber(){
     number1 = Math.floor(Math.random()*10 + 1); 
     number2 = Math.floor(Math.random()*10 + 1);
         
-    // document.getElementById('firstNumber').innerHTML = number1; // oppdaterer tallene i div - skal ikke brukes med MVC
-    // document.getElementById('secondNumber').innerHTML = number2; - skal ikke brukes med MVC
+   
 
     console.log('first random number: ' + number1)
     console.log('second random number: ' + number2)
         
-    // document.getElementById('input').value = ''; // tømmer input feltet - skal ikke brukes med MVC
+ 
     
     updateView();
 }
     
 function checkAnswer(){
-    //document.getElementById('input').value; (skal ikke brukes i MVC) // value brukes fordi det ikke er slutt tag på input
-    let currectOperator = '';
+
+    let currentOperator = '';
 
     if (number1 > number2){ // sjekker om operator i input div er riktig
-        currectOperator = '>';      
+        currentOperator = '>';      
     } else if (number1 < number2){
-        currectOperator = '<';
+        currentOperator = '<';
     } else {
-        currectOperator = '='; //hvis begge tallene er like
+        currentOperator = '='; //hvis begge tallene er like
     }
 
-    if (userInput == currectOperator){ // sjekker om input svar er riktig og legger til eller trekker fra på score
+    if (userInput == currentOperator){ // sjekker om input svar er riktig og legger til eller trekker fra på score
         score++;
         alert('That is correct! You get a point!');
     } else {
@@ -86,7 +85,7 @@ function checkAnswer(){
         alert('NO, WRONG! I am so disappointed. I will take a point back now.')
     }
 
-    //document.getElementById('score').innerHTML = score; // oppdaterer score div - skal ikke brukes med MVC, bare document.getElementById en gang
+   
     
     updateView();
 }
